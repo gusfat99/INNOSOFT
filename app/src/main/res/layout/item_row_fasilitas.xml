@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
     android:background="@drawable/gradient_theme"
     android:padding="16dp">
+
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -14,12 +14,13 @@
         android:elevation="8dp"
         app:cardCornerRadius="8dp"
         android:layout_marginBottom="10dp">
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/img_item_photo"
+                android:id="@+id/img_item_photo_fasilitas"
                 android:layout_width="95dp"
                 android:layout_height="95dp"
                 android:layout_marginEnd="16dp"
@@ -29,8 +30,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/img_item_photo"
-                android:layout_toRightOf="@id/img_item_photo"
+                android:layout_toEndOf="@id/img_item_photo_fasilitas"
+                android:layout_toRightOf="@id/img_item_photo_fasilitas"
                 android:orientation="vertical">
                 <TextView
                     android:id="@+id/tv_item_name"
@@ -41,7 +42,7 @@
                     android:textStyle="bold"
                     tools:text="Name Fasilitasi" />
                 <TextView
-                    android:id="@+id/tv_item_detail"
+                    android:id="@+id/tv_item_deskripsi_fasilitas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
