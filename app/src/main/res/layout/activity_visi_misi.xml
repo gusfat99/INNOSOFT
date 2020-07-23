@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_theme"
+    android:weightSum="13"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+
+        >
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="VISI MISI"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="40sp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+        <GridLayout
+            android:columnCount="1"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:padding="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/darker_gray">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Visi"
+                        android:id="@+id/teks1"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="30sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menghasilkan riset unggulan berbasis teknologi web, mobile dan kecerdasan buatan untuk mendukung pengembangan smart campus."
+                        android:id="@+id/teks2"
+                        android:layout_below="@id/teks1"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="17sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginTop="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    >
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Misi"
+                        android:id="@+id/teks3"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="30sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text=" 1.	Menyelenggarakan pendidikan akademik dan praktikum keahlian bidang teknologi web, mobile, dan kecerdasan buatan. \n
+2. 	Menyelenggarakan kegiatan sharing knowledge alumni untuk meningkatkan pengalaman dan keahlian mahasiswa agar dapat terus berkembang, berdaya saing global, berakhlak mulia dan berjiwa kewirausahaan.\n
+3.	Mengembangkan peneliti di bidang teknologi web, mobile dan kecerdasan buatan yang terpadu, produktif dan terukur yang dapat diterapkan di lingkungan kampus. \n
+4.	Menyelenggarakan pengabdian kepada masyarakat sebagai bentuk keterlibatan perguruan tinggi untuk memberikan sumbangsih dalam bentuk pengalaman ilmu pengetahuan, teknologi dan seni (IPTEKS).\n
+5.	Menyelenggarakan kemitraan dengan dunia usaha dan menjaga hubungan dengan alumni untuk mendukung kegiatan akademik dan non-akademik dalam rangka penyempurnaan proses pembelajaran.
+"
+                        android:id="@+id/teks4"
+                        android:layout_below="@id/teks3"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="11sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginTop="0dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tujuan"
+                        android:id="@+id/teks5"
+                        android:textStyle="bold"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="30sp"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 1.	Menghasilka  layanan praktikum yang optimal untuk mendukung pembelajaran. \n
+2.	Meningkatkan keahlian dan pengetahuan mahasiswa serta masyarakat di bidang pemrograman melalui pelatiha, workshop, dan pelatihan sejenis. \n
+3.	Menghasilkan produk-produk penelitian yang dapat diterapkan baik di dalam kampus maupun di luar kampus.\n
+4.	 Meningkatkan kerjasama dengan industri dan isntansi terkait.
+"
+                        android:id="@+id/teks6"
+                        android:layout_below="@id/teks5"
+                        android:textColor="@color/cardview_light_background"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </GridLayout>
+
+
+
+
+
+
+
+</LinearLayout>
