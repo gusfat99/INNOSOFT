@@ -14,13 +14,13 @@ public class RoadmapData {
     };
 
     private static String[] roadmapDeskripsi = {
-      "Web Design \n Web Programming \n Web Service Development \n Web Service Development \n Semantic Web & Ontology",
-      "Mobil Apps \n Mobile GPS \n Mobile Game \n Mobile Commerce",
-      "Data Mining \n Data Warehouse \n Big Data Algorithm \n Sentiment Analysis",
-      "Smart Campus",
-      "Image Processing \n Text Processing \n Pattern Recognition \n Deep Learning",
-      "Forecasting System \n Enterprise Resource Planning \n Enterprise System \n Inteligent System",
-      "Cloud Computing \n Internet of Things"
+      " Web Design \n Web Programming \n Web Service Development \n Web Service Development \n Semantic Web & Ontology",
+      " Mobil Apps \n Mobile GPS \n Mobile Game \n Mobile Commerce",
+      " Data Mining \n Data Warehouse \n Big Data Algorithm \n Sentiment Analysis",
+      " Smart Campus",
+      " Image Processing \n Text Processing \n Pattern Recognition \n Deep Learning",
+      " Forecasting System \n Enterprise Resource Planning \n Enterprise System \n Inteligent System",
+      " Cloud Computing \n Internet of Things"
     };
 
     private static int[] roadmapImages = {

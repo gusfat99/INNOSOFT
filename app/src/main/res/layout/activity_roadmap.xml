@@ -5,14 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RoadmapActivity">
+    tools:context=".RoadmapActivity"
+    android:background="@color/putih">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_roadmap2"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/item_row_roadmap">
+        android:layout_height="150dp">
+        <LinearLayout
+            android:background="@drawable/animation_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INNOSOFT"
+                android:textColor="@color/putih"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+        </LinearLayout>
 
-    </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_roadmap2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:listitem="@layout/item_row_roadmap">-->
+
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
 
 </LinearLayout>
