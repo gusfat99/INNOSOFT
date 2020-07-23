@@ -10,6 +10,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     CardView btnRoadmap;
     CardView CardFasilitas;
+    CardView cardGalery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         btnRoadmap = (CardView) findViewById(R.id.roadmap_btn);
         CardFasilitas = (CardView) findViewById(R.id.fasilitas_btn);
+        cardGalery = (CardView)  findViewById(R.id.card_galery);
+        cardGalery.setOnClickListener(this);
         CardFasilitas.setOnClickListener(this);
         btnRoadmap.setOnClickListener(this);
     }
@@ -33,11 +36,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(moveToFasilitas);
                 break;
 
+            case R.id.card_galery :
+                Intent moveToGalery = new Intent(MainActivity.this, Gallery.class);
+                startActivity(moveToGalery);
+                break;
         }
     }
 
-    public void pindah(View view) {
-        Intent intent = new Intent(MainActivity.this, Gallery.class);
-        startActivity(intent);
-    }
 }

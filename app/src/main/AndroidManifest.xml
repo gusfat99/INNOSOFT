@@ -10,10 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".RoadmapActivity"></activity>
-        <activity android:name=".Fasilitas_Activity" />
-        <activity android:name=".MainActivity">
         <activity android:name=".Fasilitas_Activity"></activity>
         <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Gallery"></activity>
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
