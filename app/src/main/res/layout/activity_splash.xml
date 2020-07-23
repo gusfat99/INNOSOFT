@@ -16,7 +16,7 @@
         android:layout_marginTop="210dp"
         android:textStyle="bold"
         android:textColor="@color/putih"
-        android:textSize="23dp"
+        android:textSize="20dp"
         android:fontFamily="sans-serif-condensed"
         />
 
@@ -34,8 +34,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="273dp"
-        android:layout_height="256dp"
+        android:layout_width="250dp"
+        android:layout_height="230dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="290dp"
         android:scaleType="center"
