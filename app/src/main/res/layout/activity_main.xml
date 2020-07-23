@@ -127,6 +127,7 @@
         <!-- row 1 -->
         <!-- colom 1 -->
         <androidx.cardview.widget.CardView
+            android:id="@+id/fasilitas_btn"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -231,7 +232,9 @@
                     android:src="@drawable/gallery"
                     android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:onClick="pindah"
+                    />
                 <TextView
                     android:id="@+id/textView_5"
                     android:layout_width="wrap_content"

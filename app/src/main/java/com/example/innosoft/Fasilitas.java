@@ -1,7 +1,8 @@
 package com.example.innosoft;
 
 public class Fasilitas {
-    private String title, description, imgView;
+    private String title, description;
+    private int imgView;
 
     public String getTitle() {
         return title;
@@ -19,11 +20,11 @@ public class Fasilitas {
         this.description = description;
     }
 
-    public String getImgView() {
+    public int getImgView() {
         return imgView;
     }
 
-    public void setImgView(String imgView) {
+    public void setImgView(int imgView) {
         this.imgView = imgView;
     }
 }
