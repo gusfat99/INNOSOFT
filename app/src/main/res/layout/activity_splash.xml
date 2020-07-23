@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/animation_gradient"
+    tools:context=".Splash">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/peminatan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:textStyle="bold"
+        android:textColor="@color/putih"
+        android:textSize="23dp"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prodi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        android:textStyle="bold"
+        android:textColor="@color/putih"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="273dp"
+        android:layout_height="256dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+        android:scaleType="center"
+        app:srcCompat="@drawable/innosotflogo"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Versi 1.0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="560dp"
+        android:textStyle="bold"
+        android:textColor="@color/putih"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+</RelativeLayout>

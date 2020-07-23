@@ -3,6 +3,14 @@
     <color name="colorPrimary">#3F98E7</color>
     <color name="colorPrimaryDark">#882399</color>
     <color name="colorAccent">#D81B60</color>
+
+<!--    gradasi Warna-->
+    <color name="gradasi_ungu">#D74EED</color>
+    <color name="gradasi_biru">#03A9F4</color>
+
+<!--    warna Text-->
+
+    <color name="putih">#FFFFFF</color>
     <color name="hitam">#0B0A0A</color>
-    <color name="putih">#fff</color>
+
 </resources>
