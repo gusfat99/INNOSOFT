@@ -5,42 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RoadmapActivity"
-    android:background="@color/putih">
+    tools:context=".RoadmapActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="wrap_content">
         <LinearLayout
-            android:background="@drawable/animation_gradient"
+            android:background="@color/colorPrimaryDark"
             android:layout_width="match_parent"
             android:layout_height="130dp"
             android:orientation="vertical">
             <ImageView
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/"/>
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="INNOSOFT"
-                android:textColor="@color/putih"
-                android:textStyle="bold"
-                android:textSize="22sp"/>
+                android:layout_height="100dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/innosoft_logofull"/>
         </LinearLayout>
 
     </RelativeLayout>
 
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/rv_roadmap2"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        tools:listitem="@layout/item_row_roadmap">-->
-
-<!--    </androidx.recyclerview.widget.RecyclerView>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_roadmap2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        tools:listitem="@layout/item_row_roadmap" />
 
 </LinearLayout>
