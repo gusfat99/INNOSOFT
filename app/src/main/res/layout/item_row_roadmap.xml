@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="16dp">
+    android:padding="10dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_title"
@@ -20,8 +20,8 @@
             android:layout_height="wrap_content"
             >
             <ImageView
-                android:layout_width="95dp"
-                android:layout_height="95dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
                 android:id="@+id/img_roadmap2"
                 android:src="@android:color/darker_gray"
                 android:layout_marginRight="16dp"
@@ -40,6 +40,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_item_name_roadmap"
                     android:text="Nama Roadmap"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
                     android:textSize="24dp"
                     android:textStyle="bold"
                     />
@@ -48,6 +50,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/tv_item_deskripsi_roadmap"
                     android:text="Deskripsi"
+                    android:paddingTop="3dp"
+                    android:layout_marginBottom="5dp"
                     android:textSize="20dp"
                     android:textStyle=""
                     />

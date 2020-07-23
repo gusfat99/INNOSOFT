@@ -7,12 +7,29 @@
     android:orientation="vertical"
     tools:context=".RoadmapActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/innosoft_logofull"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_roadmap2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/item_row_roadmap">
-
-    </androidx.recyclerview.widget.RecyclerView>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        tools:listitem="@layout/item_row_roadmap" />
 
 </LinearLayout>
