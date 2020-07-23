@@ -44,10 +44,10 @@ public class ListFasilitasAdaptor extends RecyclerView.Adapter<ListFasilitasAdap
         return listFasilitas.size();
     }
 
-    public class ListViewHolder extends RecyclerView.ViewHolder {
+    class ListViewHolder extends RecyclerView.ViewHolder {
         ImageView imageView;
         TextView tvName, tvDescription;
-        public ListViewHolder(@NonNull View itemView) {
+        public ListViewHolder(View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.img_item_photo_fasilitas);
             tvName = itemView.findViewById(R.id.tv_item_name);
