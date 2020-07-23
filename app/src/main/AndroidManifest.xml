@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".RoadmapActivity"></activity>
+        <activity android:name=".Fasilitas_Activity"></activity>
+
+        <activity android:name=".Gallery"></activity>
 <!--        <activity android:name=".Struktur_organisasi"></activity>-->
 <!--        <activity android:name=".Fasilitas_Activity" />-->
         <activity android:name=".MainActivity"
@@ -21,6 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

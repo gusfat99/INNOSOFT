@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_theme"
+    tools:context=".Gallery">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="165dp"
+        android:layout_marginBottom="600dp"
+        >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halaman Gallery"
+        android:background="@color/putih"
+        android:textStyle="italic"
+        android:shadowRadius="@android:integer/config_mediumAnimTime"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="34sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+
+        android:gravity="center_horizontal"
+         />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+         <GridLayout
+            android:columnCount="1"
+            android:rowCount="6"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="14dp">
+
+
+
+            //gambar1
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:src="@drawable/kegiatanbersama"
+                       android:layout_gravity="top"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:foregroundGravity="left"/>
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textcard1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="13sp"
+                    android:text="Belajar besama"
+                    android:layout_marginLeft="210dp"
+                    android:layout_marginTop="14dp"
+
+
+                    />
+                <TextView
+                    android:id="@+id/textcard1.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:textColor="@color/hitam"
+                    android:textSize="9sp"
+                    android:text="@string/belajarbersama"
+                    android:layout_marginLeft="210dp"
+                    android:layout_marginTop="40dp"
+                    />
+
+                <TextView
+                    android:id="@+id/textcard1.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textColor="@color/hitam"
+                    android:textSize="7sp"
+                    android:text="@string/keterangan"
+                    android:layout_marginLeft="210dp"
+                    android:layout_marginTop="115dp"
+
+
+                    />
+            </androidx.cardview.widget.CardView>
+
+            //gambar2
+             <androidx.cardview.widget.CardView
+                 android:id="@+id/card2"
+                 android:layout_width="match_parent"
+                 android:layout_height="160dp"
+                 app:cardUseCompatPadding="true"
+                 app:cardCornerRadius="8dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 >
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+
+
+                     android:orientation="vertical"
+                     >
+                     <ImageView
+                         android:src="@drawable/fikringetik"
+                         android:layout_gravity="top"
+                         android:layout_width="200dp"
+                         android:layout_height="150dp"
+                         android:foregroundGravity="left"/>
+
+
+                 </LinearLayout>
+                 <TextView
+                     android:id="@+id/textcard2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+
+                     android:textStyle="bold"
+                     android:textColor="@color/colorPrimaryDark"
+                     android:textSize="13sp"
+                     android:text="Bergelut Dengan Tugas"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="14dp"
+
+
+                     />
+                 <TextView
+                     android:id="@+id/textcard2.1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textStyle="italic"
+                     android:textColor="@color/hitam"
+                     android:textSize="9sp"
+                     android:text="@string/bergelutdengantugas"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="40dp"
+
+                     />
+
+                 <TextView
+                     android:id="@+id/textcard2.2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textStyle="normal"
+                     android:textColor="@color/hitam"
+                     android:textSize="7sp"
+                     android:text="@string/keterangan"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="115dp"
+
+
+                     />
+             </androidx.cardview.widget.CardView>
+
+            //gambar3
+             <androidx.cardview.widget.CardView
+                 android:id="@+id/card3"
+                 android:layout_width="match_parent"
+                 android:layout_height="160dp"
+                 app:cardUseCompatPadding="true"
+                 app:cardCornerRadius="8dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 >
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     >
+                     <ImageView
+                         android:src="@drawable/alfindanu"
+                         android:layout_gravity="top"
+                         android:layout_width="200dp"
+                         android:layout_height="150dp"
+                         android:foregroundGravity="left"/>
+
+
+                 </LinearLayout>
+                 <TextView
+                     android:id="@+id/textcard3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+
+                     android:textStyle="bold"
+                     android:textColor="@color/colorPrimaryDark"
+                     android:textSize="13sp"
+                     android:text="Pejuang Tugas"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="14dp"
+                     />
+                 <TextView
+                     android:id="@+id/textcard3.1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textStyle="italic"
+                     android:textColor="@color/hitam"
+                     android:textSize="9sp"
+                     android:text="@string/pejuangtugas"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="40dp"
+
+                     />
+
+                 <TextView
+                     android:id="@+id/textcard3.2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textStyle="normal"
+                     android:textColor="@color/hitam"
+                     android:textSize="7sp"
+                     android:text="@string/keterangan"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="115dp"
+
+
+                     />
+             </androidx.cardview.widget.CardView>
+
+            //gambar4
+             <androidx.cardview.widget.CardView
+                 android:id="@+id/card4"
+                 android:layout_width="match_parent"
+                 android:layout_height="160dp"
+                 app:cardUseCompatPadding="true"
+                 app:cardCornerRadius="8dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 >
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     >
+                     <ImageView
+                         android:src="@drawable/fikri"
+                         android:layout_gravity="top"
+                         android:layout_width="200dp"
+                         android:layout_height="150dp"
+                         android:foregroundGravity="left"/>
+
+
+                 </LinearLayout>
+                 <TextView
+                     android:id="@+id/textcard4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+
+                     android:textStyle="bold"
+                     android:textColor="@color/colorPrimaryDark"
+                     android:textSize="13sp"
+                     android:text="Fokus terhadap pembelajaran"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="14dp"
+                     />
+                 <TextView
+                     android:id="@+id/textcard4.1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textStyle="italic"
+                     android:textColor="@color/hitam"
+                     android:textSize="9sp"
+                     android:text="@string/istiqomah"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="40dp"
+
+                     />
+
+                 <TextView
+                     android:id="@+id/textcard4.2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textStyle="normal"
+                     android:textColor="@color/hitam"
+                     android:textSize="7sp"
+                     android:text="@string/keterangan"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="115dp"
+
+
+                     />
+             </androidx.cardview.widget.CardView>
+
+            //gambar5
+             <androidx.cardview.widget.CardView
+                 android:id="@+id/card5"
+                 android:layout_width="match_parent"
+                 android:layout_height="160dp"
+                 app:cardUseCompatPadding="true"
+                 app:cardCornerRadius="8dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 >
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     >
+                     <ImageView
+                         android:src="@drawable/fokus"
+                         android:layout_gravity="top"
+                         android:layout_width="200dp"
+                         android:layout_height="150dp"
+                         android:foregroundGravity="left"/>
+
+
+                 </LinearLayout>
+                 <TextView
+                     android:id="@+id/textcard5"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+
+                     android:textStyle="bold"
+                     android:textColor="@color/colorPrimaryDark"
+                     android:textSize="13sp"
+                     android:text="Berbagi ilmu"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="14dp"
+                     />
+                 <TextView
+                     android:id="@+id/textcard5.1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textStyle="italic"
+                     android:textColor="@color/hitam"
+                     android:textSize="9sp"
+                     android:text="@string/fokus"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="40dp"
+
+                     />
+
+                 <TextView
+                     android:id="@+id/textcard5.2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textStyle="normal"
+                     android:textColor="@color/hitam"
+                     android:textSize="7sp"
+                     android:text="@string/keterangan"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="115dp"
+
+
+                     />
+             </androidx.cardview.widget.CardView>
+
+            //gambar6
+             <androidx.cardview.widget.CardView
+                 android:id="@+id/card6"
+                 android:layout_width="match_parent"
+                 android:layout_height="160dp"
+                 app:cardUseCompatPadding="true"
+                 app:cardCornerRadius="8dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 >
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     >
+                     <ImageView
+                         android:src="@drawable/salingmengingatkan"
+                         android:layout_gravity="top"
+                         android:layout_width="200dp"
+                         android:layout_height="150dp"
+                         android:foregroundGravity="left"/>
+
+
+                 </LinearLayout>
+                 <TextView
+                     android:id="@+id/textcard6"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+
+                     android:textStyle="bold"
+                     android:textColor="@color/colorPrimaryDark"
+                     android:textSize="13sp"
+                     android:text="Saling Berbagi"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="14dp"
+                     />
+                 <TextView
+                     android:id="@+id/textcard6.1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textStyle="italic"
+                     android:textColor="@color/hitam"
+                     android:textSize="9sp"
+                     android:text="@string/salingmengingatkan"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="40dp"
+
+                     />
+
+                 <TextView
+                     android:id="@+id/textcard6.2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textStyle="normal"
+                     android:textColor="@color/hitam"
+                     android:textSize="7sp"
+                     android:text="@string/keterangan"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="115dp"
+
+
+                     />
+             </androidx.cardview.widget.CardView>
+
+             //gambar7
+             <androidx.cardview.widget.CardView
+                 android:id="@+id/card7"
+                 android:layout_width="match_parent"
+                 android:layout_height="160dp"
+                 app:cardUseCompatPadding="true"
+                 app:cardCornerRadius="8dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 >
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     >
+                     <ImageView
+                         android:src="@drawable/fikriberbagi"
+                         android:layout_gravity="top"
+                         android:layout_width="200dp"
+                         android:layout_height="150dp"
+                         android:foregroundGravity="left"/>
+
+
+                 </LinearLayout>
+                 <TextView
+                     android:id="@+id/textcard7"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+
+                     android:textStyle="bold"
+                     android:textColor="@color/colorPrimaryDark"
+                     android:textSize="13sp"
+                     android:text="Presentasi"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="14dp"
+                     />
+                 <TextView
+                     android:id="@+id/textcard7.1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textStyle="italic"
+                     android:textColor="@color/hitam"
+                     android:textSize="9sp"
+                     android:text="@string/belajarkepemimpinan"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="40dp"
+
+                     />
+
+                 <TextView
+                     android:id="@+id/textcard7.2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textStyle="normal"
+                     android:textColor="@color/hitam"
+                     android:textSize="7sp"
+                     android:text="@string/keterangan"
+                     android:layout_marginLeft="210dp"
+                     android:layout_marginTop="115dp"
+
+
+                     />
+             </androidx.cardview.widget.CardView>
+
+
+             <FrameLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_weight="8">
+
+
+
+             </FrameLayout>
+
+
+
+
+         </GridLayout>
+
+
+
+            //tampilan akhir
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

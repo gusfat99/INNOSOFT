@@ -1,53 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:padding="16dp">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="8dp"
         app:cardCornerRadius="8dp"
        >
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
 
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
             <ImageView
-                android:id="@+id/img_item_photo_fasilitas"
-                android:layout_width="120dp"
+                android:layout_width="95dp"
                 android:layout_height="95dp"
-                android:layout_marginEnd="16dp"
+                android:id="@+id/img_roadmap2"
+                android:src="@android:color/darker_gray"
                 android:layout_marginRight="16dp"
-                tools:src="@android:color/darker_gray" />
+                android:layout_marginEnd="16dp"
+                />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_toEndOf="@id/img_item_photo_fasilitas"
-                android:layout_toRightOf="@id/img_item_photo_fasilitas"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/img_roadmap2"
+                android:layout_toRightOf="@+id/img_roadmap2"
+                >
                 <TextView
-                    android:id="@+id/tv_item_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:textSize="20sp"
+                    android:id="@+id/tv_item_name_roadmap"
+                    android:text="Nama Roadmap"
+                    android:textSize="24dp"
                     android:textStyle="bold"
-                    tools:text="Name Fasilitasi" />
+                    />
                 <TextView
-                    android:id="@+id/tv_item_deskripsi_fasilitas"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:text="@string/description"
-                    tools:text="Description" />
+                    android:id="@+id/tv_item_deskripsi_roadmap"
+                    android:text="Deskripsi"
+                    android:textSize="20dp"
+                    android:textStyle=""
+                    />
+
             </LinearLayout>
+
         </RelativeLayout>
+
+
     </androidx.cardview.widget.CardView>
+
 
 </RelativeLayout>

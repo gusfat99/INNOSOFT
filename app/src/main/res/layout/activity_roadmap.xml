@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Fasilitas_Activity">
+    tools:context=".RoadmapActivity">
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_fasilitas"
+        android:id="@+id/rv_roadmap2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_row_fasilitas">
+        tools:listitem="@layout/item_row_roadmap">
 
     </androidx.recyclerview.widget.RecyclerView>
+
 </LinearLayout>

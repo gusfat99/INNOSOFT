@@ -11,4 +11,6 @@
 <!--    warna Text-->
 
     <color name="putih">#FFFFFF</color>
+    <color name="hitam">#0B0A0A</color>
+
 </resources>
