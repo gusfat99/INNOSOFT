@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">INNOSOFT</string>
+    <string name="belajarbersama">Belajar bersama merupakan kegiatan
+    yang menyenangkan, Dan belajar besama biasa dilakukan jika ada tugas yang diberikan oleh dosen</string>
+    <string name="keterangan">Lokasi : Lab Innosoft, Fakultas Teknik Informatika, Uika Bogor. </string>
+
+    <string name="bergelutdengantugas">Ketika Tugas yang dikerjakan masih belum selesai sampai malam hari, kami pun siap untuk bergelut dengan
+    tugas hingga larut malam</string>
+
+    <string name="pejuangtugas">Seringkali banyak mahasiswa yang selalu duduk di depan komputer demi selesainya tugas</string>
+    <string name="fokus">Fokus merupakan salah satu kunci kesuksesan dari banyak kunci lainnya, Di dalam Lab Innosoft kita di haruskan fokus dan memperhatikan Dosen dengan benar </string>
+    <string name="istiqomah">Ketika kita telah masuk Lab Innsosoft, maka secara tidak langsung kita pun harus siap untuk bisa istiqomah dalam mengerjakan tugas</string>
+
+    <string name="salingmengingatkan">Di dalam suasana pendidikan dan pembelajaran, Kita saling mengingatkan agar tujuan utama kita dapat tercapai dengan bersama </string>
+    <string name="belajarkepemimpinan">Di dalam Lab Innosoft kita belajar kepemimpinan, dengan banyak presentasi di depan Dosen dan juga Teman- teman, dan juga melatih untuk Pubic speaking </string>
+
 </resources>
