@@ -14,20 +14,17 @@
         android:layout_height="0dp"
         android:layout_weight="2">
 
-        <TextView
-            android:id="@+id/judul"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:layout_marginBottom="0dp"
-            android:text="INNOSOFT"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="34sp" />
+            android:layout_height="130dp"
+            android:orientation="vertical">
 
-
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/innosoft_logofull"/>
+        </LinearLayout>
     </RelativeLayout>
 
     <GridLayout
