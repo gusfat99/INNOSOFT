@@ -13,10 +13,9 @@
         <activity android:name=".Fasilitas_Activity" android:parentActivityName=".MainActivity" android:label="Fasilitas" ></activity>
 
         <activity android:name=".Gallery" android:parentActivityName=".MainActivity" android:label="Galery"></activity>
-<!--        <activity android:name=".Struktur_organisasi"></activity>-->
-<!--        <activity android:name=".Fasilitas_Activity" />-->
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme2"/>
+        <activity android:name=".Struktur_organisasi" android:parentActivityName=".MainActivity" android:label="Sturkur Organisasi"></activity>
+        <activity android:name=".MainActivity" android:theme="@style/AppTheme2"/>
+
         <activity android:name=".Splash"
             android:theme="@style/AppTheme2">
             <intent-filter>
@@ -25,7 +24,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        </application>
 
-    </application>
-
-</manifest>
+    </manifest>

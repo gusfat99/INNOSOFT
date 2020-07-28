@@ -5,23 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Struktur_organisasi">
-        <RelativeLayout
+    tools:context=".RoadmapActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/putih"
             android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:layout_height="130dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/innosoft_logofull"/>
+        </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/gradasi_ungu"
-                android:orientation="vertical">
+    </RelativeLayout>
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="108dp"
-                    android:src="@drawable/innosoft_logofull"
-                    android:layout_marginTop="20dp"
-                    />
-            </LinearLayout>
-        </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_struktur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient3"
+        tools:listitem="@layout/row_struktur"
+        />
 </LinearLayout>

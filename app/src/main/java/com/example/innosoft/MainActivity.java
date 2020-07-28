@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     CardView btnRoadmap;
     CardView CardFasilitas;
     CardView cardGalery;
+    CardView CardStruktur;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +20,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnRoadmap = (CardView) findViewById(R.id.roadmap_btn);
         CardFasilitas = (CardView) findViewById(R.id.fasilitas_btn);
         cardGalery = (CardView)  findViewById(R.id.card_galery);
+        CardStruktur = (CardView) findViewById(R.id.strukturCard);
         cardGalery.setOnClickListener(this);
         CardFasilitas.setOnClickListener(this);
         btnRoadmap.setOnClickListener(this);
+        CardStruktur.setOnClickListener(this);
+
     }
 
     @Override
@@ -39,6 +43,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.card_galery :
                 Intent moveToGalery = new Intent(MainActivity.this, Gallery.class);
                 startActivity(moveToGalery);
+                break;
+
+            case R.id.strukturCard :
+                Intent moveToStruktur = new Intent(MainActivity.this, Struktur_organisasi.class);
+                startActivity(moveToStruktur);
                 break;
         }
     }
