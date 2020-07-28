@@ -9,28 +9,30 @@
 
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginRight="165dp"
-        android:layout_marginBottom="600dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="500dp"
+        android:layout_marginTop="50dp"
+        android:outlineSpotShadowColor="@color/hitam"
+        android:background="@color/putih"
+
         >
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Halaman Gallery"
-        android:background="@color/putih"
-        android:textStyle="italic"
-        android:shadowRadius="@android:integer/config_mediumAnimTime"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="34sp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="50dp"
-        android:layout_centerHorizontal="true"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/putih"
+            android:gravity="left"
 
-        android:gravity="center_horizontal"
-         />
+            android:shadowRadius="@android:integer/config_mediumAnimTime"
+            android:text="Gallery"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="34sp"
+
+            android:textStyle="italic" />
     </RelativeLayout>
 
     <ScrollView
@@ -78,7 +80,7 @@
                     android:orientation="vertical"
                     >
                     <ImageView
-                        android:src="@drawable/kegiatanbersama"
+                        android:src="@drawable/dosenmengajar"
                        android:layout_gravity="top"
                         android:layout_width="200dp"
                         android:layout_height="150dp"
@@ -162,7 +164,7 @@
                      android:textStyle="bold"
                      android:textColor="@color/colorPrimaryDark"
                      android:textSize="13sp"
-                     android:text="Bergelut Dengan Tugas"
+                     android:text="Kawan Tugas"
                      android:layout_marginLeft="210dp"
                      android:layout_marginTop="14dp"
 
@@ -278,7 +280,7 @@
                      android:orientation="vertical"
                      >
                      <ImageView
-                         android:src="@drawable/fikri"
+                         android:src="@drawable/belajarbareng"
                          android:layout_gravity="top"
                          android:layout_width="200dp"
                          android:layout_height="150dp"
@@ -294,7 +296,7 @@
                      android:textStyle="bold"
                      android:textColor="@color/colorPrimaryDark"
                      android:textSize="13sp"
-                     android:text="Fokus terhadap pembelajaran"
+                     android:text="Fokus Belajar"
                      android:layout_marginLeft="210dp"
                      android:layout_marginTop="14dp"
                      />
@@ -522,14 +524,7 @@
              </androidx.cardview.widget.CardView>
 
 
-             <FrameLayout
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 android:layout_weight="8">
 
-
-
-             </FrameLayout>
 
 
 

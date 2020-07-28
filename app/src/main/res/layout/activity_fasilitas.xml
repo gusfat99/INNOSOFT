@@ -6,11 +6,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Fasilitas_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/innosoft_logofull"/>
+        </LinearLayout>
+    </RelativeLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_fasilitas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
         tools:listitem="@layout/item_row_fasilitas">
-
     </androidx.recyclerview.widget.RecyclerView>
 </LinearLayout>

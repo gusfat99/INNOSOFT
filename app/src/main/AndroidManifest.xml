@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RoadmapActivity" android:parentActivityName=".MainActivity" android:label="ROADMAP"></activity>
+        <activity android:name=".VisiMisi" android:parentActivityName=".MainActivity" android:label="Visi Misi" ></activity>
         <activity android:name=".Fasilitas_Activity" android:parentActivityName=".MainActivity" android:label="Fasilitas" ></activity>
-
+        <activity android:name=".RoadmapActivity" android:parentActivityName=".MainActivity" android:label="ROADMAP"></activity>
         <activity android:name=".Gallery" android:parentActivityName=".MainActivity" android:label="Galery"></activity>
         <activity android:name=".Struktur_organisasi" android:parentActivityName=".MainActivity" android:label="Sturkur Organisasi"></activity>
         <activity android:name=".MainActivity" android:theme="@style/AppTheme2"/>
@@ -20,7 +20,6 @@
             android:theme="@style/AppTheme2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
