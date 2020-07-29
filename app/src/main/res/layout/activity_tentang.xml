@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_theme"
+    tools:context=".Tentang">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+         android:layout_marginLeft="60dp"
+            app:srcCompat="@drawable/logoinnosoft"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:columnCount="1"
+                android:rowCount="6"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
+                android:layout_weight="8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="14dp">
+
+                  <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/putih"
+                        android:orientation="vertical"
+                        >
+                        <ImageView
+                            android:src="@drawable/tentang"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            />
+
+
+                    </LinearLayout>
+
+
+                      <RelativeLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textcard1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:text="Tentang Aplikasi"
+                     android:layout_marginLeft="10dp"
+                        android:layout_marginTop="120dp"
+                        />
+                    <TextView
+                        android:id="@+id/textcard1.1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:textColor="@color/hitam"
+                        android:textSize="15sp"
+                        android:text="@string/deskripsitentangaplikasi"
+                       android:layout_marginLeft="10dp"
+                        android:layout_marginTop="160dp"
+                        />
+
+                      </RelativeLayout>
+
+                      <RelativeLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content">
+                          <TextView
+                              android:id="@+id/textcard2"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="bold"
+                              android:textColor="@color/colorPrimaryDark"
+                              android:textSize="20sp"
+                              android:text="Email"
+                              android:layout_marginLeft="10dp"
+                              android:layout_marginTop="260dp"
+                              />
+                          <TextView
+                              android:id="@+id/textcard2.1"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="normal"
+                              android:textColor="@color/hitam"
+                              android:textSize="15sp"
+                              android:text="@string/emailtentang"
+                              android:layout_marginLeft="10dp"
+                              android:layout_marginTop="295dp"
+                              />
+
+                      </RelativeLayout>
+
+                      <RelativeLayout
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content">
+                          <TextView
+                              android:id="@+id/textcard3"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="bold"
+                              android:textColor="@color/colorPrimaryDark"
+                              android:textSize="20sp"
+                              android:text="Telepone atau WhatsApp"
+                              android:layout_marginLeft="10dp"
+                              android:layout_marginTop="340dp"
+                              />
+                          <TextView
+                              android:id="@+id/textcard3.1"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="normal"
+                              android:textColor="@color/hitam"
+                              android:textSize="15sp"
+                              android:text="@string/telepon"
+                              android:layout_marginLeft="10dp"
+                              android:layout_marginTop="374dp"
+                              />
+
+                      </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textcard1.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:textColor="@color/hitam"
+                        android:textSize="9sp"
+                        android:text="@string/keterangan"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="460dp"
+
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

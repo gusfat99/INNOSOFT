@@ -9,15 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RoadmapActivity" android:parentActivityName=".MainActivity" android:label="ROADMAP"></activity>
-        <activity android:name=".Fasilitas_Activity" android:parentActivityName=".MainActivity" android:label="Fasilitas" ></activity>
-
-        <activity android:name=".Gallery" android:parentActivityName=".MainActivity" android:label="Galery"></activity>
-<!--        <activity android:name=".Struktur_organisasi"></activity>-->
-<!--        <activity android:name=".Fasilitas_Activity" />-->
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme2"/>
-        <activity android:name=".Splash"
+        <activity android:name=".Tentang"></activity>
+        <activity
+            android:name=".RoadmapActivity"
+            android:label="ROADMAP"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Fasilitas_Activity"
+            android:label="Fasilitas"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Gallery"
+            android:label="Galery"
+            android:parentActivityName=".MainActivity" /> <!-- <activity android:name=".Struktur_organisasi"></activity> -->
+        <!-- <activity android:name=".Fasilitas_Activity" /> -->
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".Splash"
             android:theme="@style/AppTheme2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +35,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
