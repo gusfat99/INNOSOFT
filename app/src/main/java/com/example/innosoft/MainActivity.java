@@ -7,10 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     CardView btnRoadmap;
     CardView CardFasilitas;
     CardView cardGalery;
+    CardView CardStruktur;
     CardView tentang_btn;
 
 
@@ -21,12 +23,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnRoadmap = (CardView) findViewById(R.id.roadmap_btn);
         CardFasilitas = (CardView) findViewById(R.id.fasilitas_btn);
         cardGalery = (CardView)  findViewById(R.id.card_galery);
+        CardStruktur = (CardView) findViewById(R.id.strukturCard);
         cardGalery.setOnClickListener(this);
         CardFasilitas.setOnClickListener(this);
         btnRoadmap.setOnClickListener(this);
 
         tentang_btn = (CardView) findViewById(R.id.tentang_btn);
         tentang_btn.setOnClickListener(this);
+        CardStruktur.setOnClickListener(this);
+
     }
 
     @Override
@@ -50,7 +55,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent moveToTentang = new Intent(MainActivity.this,Tentang.class);
                 startActivity(moveToTentang);
                 break;
+
+            case R.id.strukturCard :
+                Intent moveToStruktur = new Intent(MainActivity.this, Struktur_organisasi.class);
+                startActivity(moveToStruktur);
+                break;
         }
     }
 
+
+    public void pindahvisimisi(View view) {
+        Intent intent = new Intent(MainActivity.this, VisiMisi.class);
+        startActivity(intent);
+    }
 }

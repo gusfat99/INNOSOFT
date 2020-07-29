@@ -9,7 +9,9 @@
     <color name="gradasi_biru">#03A9F4</color>
 
 <!--    warna Text-->
-
+    <color name="gradasi1">@drawable/gradient1</color>
+    <color name="gradasi2">@drawable/gradient2</color>
+    <color name="gradasi3">@drawable/gradient3</color>
     <color name="putih">#FFFFFF</color>
     <color name="hitam">#0B0A0A</color>
 
