@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/innosotflogo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -15,7 +15,7 @@
         <activity android:name=".Gallery" android:parentActivityName=".MainActivity" android:label="Galery"></activity>
         <activity android:name=".Struktur_organisasi" android:parentActivityName=".MainActivity" android:label="Sturkur Organisasi"></activity>
         <activity android:name=".MainActivity" android:theme="@style/AppTheme2"/>
-
+        <activity android:name=".Tentang" android:label="Tentang" android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".Splash"
             android:theme="@style/AppTheme2">
             <intent-filter>

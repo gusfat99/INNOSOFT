@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/gradient_theme"
+    android:background="@android:color/white"
     android:weightSum="13"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -16,16 +17,31 @@
 
         >
 
-        <TextView
-            android:id="@+id/judul"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:text="VISI MISI"
-            android:textColor="@color/cardview_dark_background"
-            android:textSize="40sp" />
+            android:gravity="center">
 
+            <ImageView
+                android:id="@+id/innosoftLogo"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/innosotflogo" />
+
+            <TextView
+                android:layout_toRightOf="@+id/innosoftLogo"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visi Misi"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="42dp"
+                android:textSize="45dp"/>
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
