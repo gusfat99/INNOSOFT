@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Tentang"></activity>
         <activity android:name=".VisiMisi" android:parentActivityName=".MainActivity" android:label="Visi Misi" ></activity>
         <activity android:name=".Fasilitas_Activity" android:parentActivityName=".MainActivity" android:label="Fasilitas" ></activity>
         <activity android:name=".RoadmapActivity" android:parentActivityName=".MainActivity" android:label="ROADMAP"></activity>
